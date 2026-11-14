@@ -11,7 +11,7 @@ define view entity ZI_SH2_PRODUCT
       stock      as Stock,
       case
            when stock = 0  then 'Out of stock'
-           when stock < 15 then 'Low stock'
+           when stock < 10 then 'Low stock'
            else 'In stock'
          end     as StockStatus
 }
