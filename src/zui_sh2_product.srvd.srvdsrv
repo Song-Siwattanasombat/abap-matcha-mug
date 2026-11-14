@@ -1,0 +1,4 @@
+@EndUserText.label: 'Matcha Mug product service'
+define service ZUI_SH2_PRODUCT {
+  expose ZR_SH2_PRODUCT as Product;
+}

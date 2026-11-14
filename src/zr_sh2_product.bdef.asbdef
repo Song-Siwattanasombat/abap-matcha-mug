@@ -1,0 +1,21 @@
+managed;
+
+define behavior for ZR_SH2_PRODUCT alias Product
+persistent table zsh2_product
+lock master
+{
+  create;
+  update;
+  delete;
+
+  field ( readonly : update ) ProductId;
+
+  mapping for zsh2_product
+    {
+      ProductId   = product_id;
+      ProductName = name;
+      Price       = price;
+      Currency    = currency;
+      Stock       = stock;
+    }
+}
