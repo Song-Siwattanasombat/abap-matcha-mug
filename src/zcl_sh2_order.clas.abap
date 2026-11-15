@@ -9,7 +9,11 @@ CLASS zcl_sh2_order DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_sh2_order IMPLEMENTATION.
+
+
+CLASS ZCL_SH2_ORDER IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     TYPES: BEGIN OF ty_item,
              product TYPE string,
@@ -64,8 +68,3 @@ CLASS zcl_sh2_order IMPLEMENTATION.
     out->write( |Grand total: { lv_grand_total } AUD| ).
   ENDMETHOD.
 ENDCLASS.
-
-
-
-
-

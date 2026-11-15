@@ -1,0 +1,9 @@
+CLASS zbp_r_sh2_product DEFINITION
+  PUBLIC
+  ABSTRACT
+  FINAL
+  FOR BEHAVIOR OF zr_sh2_product.
+ENDCLASS.
+
+CLASS zbp_r_sh2_product IMPLEMENTATION.
+ENDCLASS.

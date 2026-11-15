@@ -9,7 +9,11 @@ CLASS z_class_SH2 DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
- CLASS z_class_SH2 IMPLEMENTATION.
+
+
+CLASS Z_CLASS_SH2 IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
    out->write( 'hiiamSong' ).
   ENDMETHOD.

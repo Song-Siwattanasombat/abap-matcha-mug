@@ -9,7 +9,11 @@ CLASS zcl_sh2_variables DEFINITION
     PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_sh2_variables IMPLEMENTATION.
+
+
+CLASS ZCL_SH2_VARIABLES IMPLEMENTATION.
+
+
     METHOD if_oo_adt_classrun~main.
         DATA lv_product TYPE string.
     DATA lv_qty TYPE i.
@@ -41,4 +45,3 @@ CLASS zcl_sh2_variables IMPLEMENTATION.
         out->write( | grand total: { lv_grand_total } AUD| ).
     ENDMETHOD.
 ENDCLASS.
-

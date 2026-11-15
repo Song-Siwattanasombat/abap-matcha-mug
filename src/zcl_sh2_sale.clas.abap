@@ -9,7 +9,11 @@ CLASS zcl_sh2_sale DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_sh2_sale IMPLEMENTATION.
+
+
+CLASS ZCL_SH2_SALE IMPLEMENTATION.
+
+
  METHOD if_oo_adt_classrun~main.
     TYPES: BEGIN OF ty_order,
            product_id TYPE zsh2_product-product_id,

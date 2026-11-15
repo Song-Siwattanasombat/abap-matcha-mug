@@ -9,7 +9,11 @@ CLASS zcl_sh2_product_view DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_sh2_product_view IMPLEMENTATION.
+
+
+CLASS ZCL_SH2_PRODUCT_VIEW IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     SELECT FROM zi_sh2_product
     FIELDS ProductId, ProductName, Price, Stock, StockStatus
@@ -28,4 +32,3 @@ CLASS zcl_sh2_product_view IMPLEMENTATION.
     ENDLOOP.
   ENDMETHOD.
 ENDCLASS.
-

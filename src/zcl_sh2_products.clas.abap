@@ -9,7 +9,11 @@ CLASS zcl_sh2_products DEFINITION
   PRIVATE SECTION.
 ENDCLASS.
 
-CLASS zcl_sh2_products IMPLEMENTATION.
+
+
+CLASS ZCL_SH2_PRODUCTS IMPLEMENTATION.
+
+
   METHOD if_oo_adt_classrun~main.
     " Clear old data, so we can run this class again
     DELETE FROM zsh2_product.
@@ -54,5 +58,3 @@ CLASS zcl_sh2_products IMPLEMENTATION.
 
   ENDMETHOD.
 ENDCLASS.
-
-
