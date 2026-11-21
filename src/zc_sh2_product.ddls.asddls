@@ -13,5 +13,6 @@ define root view entity ZC_SH2_PRODUCT
       ProductName,
       Price,
       Currency,
-      Stock
+      Stock,
+      StockCriticality
   }

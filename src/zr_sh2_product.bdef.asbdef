@@ -9,6 +9,7 @@ lock master
   delete;
 
   field ( readonly : update ) ProductId;
+  field ( readonly ) StockCriticality;
 
 validation validatePrice on save { create; field Price; }
 validation validateStock on save { create; field Stock; }

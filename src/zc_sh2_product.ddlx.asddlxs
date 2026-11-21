@@ -26,7 +26,11 @@ annotate entity ZC_SH2_PRODUCT with
   @UI.identification: [{ position: 40 }]
   Currency;
 
-  @UI.lineItem:       [{ position: 40 }]
-  @UI.identification: [{ position: 50 }]
+  @UI.lineItem:       [{ position: 40, criticality: 'StockCriticality' }]
+  @UI.identification: [{ position: 50, criticality: 'StockCriticality' }]
   Stock;
+
+  @UI.hidden: true
+  StockCriticality; 
+  
 }

@@ -17,5 +17,13 @@ define root view entity ZR_SH2_PRODUCT
       currency   as Currency,
 
       @EndUserText.label: 'Stock'
-      stock      as Stock
+      stock      as Stock,
+      
+      @EndUserText.label: 'Stock status'
+     case
+        when stock = 0  then 1
+        when stock < 10 then 2
+        else 0
+     end        as StockCriticality
 }
+
